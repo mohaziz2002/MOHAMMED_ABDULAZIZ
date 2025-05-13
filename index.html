@@ -52,7 +52,7 @@
   <!-- Contact Form -->
   <section id="contact">
     <h2>✉️ Contact Me</h2>
-    <form id="contactForm">
+    <form id="contactForm" onsubmit="handleSubmit(event)">
       <input type="text"   name="name"    placeholder="Your Name"    required>
       <input type="email"  name="email"   placeholder="Your Email"   required>
       <textarea name="message" placeholder="Your Message" required></textarea>
