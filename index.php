@@ -1,5 +1,5 @@
 <?php
-// --------- resume data (PHP variables) ---------
+
 $name       = "Mohammed Zaki Ali Mohammed Abdulaziz";
 $headline   = "Computer Engineering Student";
 $objective  = "Motivated Computer Engineering student with a passion for software development and emerging technologies.";
@@ -23,13 +23,12 @@ $languages = [
     ['flag'=>'🇹🇷','lang'=>'Turkish', 'level'=>'B1'],
 ];
 
-// simple contact‐form processing
 $contactMsg = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $sender   = htmlspecialchars($_POST['name']);
     $email    = htmlspecialchars($_POST['email']);
     $message  = htmlspecialchars($_POST['message']);
-    // here you could mail() to yourself; for demo we'll just confirm:
+
     $contactMsg = "Thanks, <strong>{$sender}</strong>! Your message has been received.";
 }
 ?>
